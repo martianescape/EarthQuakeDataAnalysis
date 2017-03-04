@@ -22,9 +22,9 @@ Filters all the earth quake data between minMagnitude and maxMagnitude
 
 - MatchAllFilter implements Filter Interface. This is similar to the map function on the list.
 #####This filter contains list of filters and all the filters are applied on the data.
-	 MatchAllFilter maf = new MatchAllFilter();
+	 ```MatchAllFilter maf = new MatchAllFilter();
          maf.addFilter(new MagnitudeFilter(3.0, 6.0));
          maf.addFilter(new TitlePhraseFilter("start", "California"));
-         maf.satisfies();
+         maf.satisfies();```
          This filters the earth quake data that have the magnitude between 3.0 and 6.0 and that have occurred in california.
 
